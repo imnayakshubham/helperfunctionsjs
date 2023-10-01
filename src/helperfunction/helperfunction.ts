@@ -63,3 +63,48 @@ export const generateRandomNumbersInRange = (
     return Array.from(randomNumbers);
 }
 
+const partition = (arr: number[], left: number, right: number): number => {
+    const pivotValue = arr[right];
+    let i = left - 1;
+
+    for (let j = left; j < right; j++) {
+        if (arr[j] >= pivotValue) {
+            i++;
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+    }
+
+    [arr[i + 1], arr[right]] = [arr[right], arr[i + 1]];
+    return i + 1;
+};
+
+const quickSelect = (arr: number[], left: number, right: number, n: number): number => {
+    if (left === right) {
+        return arr[left];
+    }
+
+    const pivotIndex = partition(arr, left, right);
+
+    if (n === pivotIndex) {
+        return arr[pivotIndex];
+    } else if (n < pivotIndex) {
+        return quickSelect(arr, left, pivotIndex - 1, n);
+    } else {
+        return quickSelect(arr, pivotIndex + 1, right, n);
+    }
+};
+
+export const findNthMax = (arr: number[], nthMax: number | undefined = 1) => {
+    try {
+        if (Array.isArray(arr) && nthMax > 0 && nthMax <= arr.length) {
+            return quickSelect([...arr], 0, arr.length - 1, nthMax - 1);
+        } else {
+            throw "Invalid input";
+        }
+    }
+    catch (error) {
+        console.log(`Something went wrong: ${JSON.stringify(error)}`)
+        throw error;
+
+    }
+}

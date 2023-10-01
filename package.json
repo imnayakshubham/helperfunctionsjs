@@ -1,7 +1,7 @@
 {
   "name": "helperfunctionsjs",
   "author": "Nayak Shubham",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "private": false,
   "description": "An exhaustive library of programmer-friendly utility functions crafted to simplify your daily tasks and enhance productivity.",
   "main": "./lib/cjs/index.js",
