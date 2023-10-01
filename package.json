@@ -1,7 +1,7 @@
 {
-  "name": "helperfunctions",
+  "name": "helperfunctionsjs",
   "author": "Nayak Shubham",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "An exhaustive library of programmer-friendly utility functions crafted to simplify your daily tasks and enhance productivity.",
   "main": "./lib/cjs/index.js",
@@ -22,6 +22,12 @@
     "Number Validation",
     "Range Checker"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imnayakshubham/helperfunctionsjs"
+  },
+  "homepage": "https://github.com/imnayakshubham/helperfunctionsjs",
+  "bugs": "https://github.com/imnayakshubham/helperfunctionsjs/issues",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.2.2"

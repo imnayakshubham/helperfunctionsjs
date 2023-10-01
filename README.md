@@ -4,12 +4,12 @@ An exhaustive library of programmer-friendly utility functions crafted to simpli
 
 ## Installation
 ```bash
-npm install helperfunctions
+npm install helperfunctionsjs
 # or
-yarn add helperfunctions
+yarn add helperfunctionsjs
 ```
 
-In this demo, we will illustrate the usage of the `isValidNumber`, `isInRange`, and `generateRandomNumbersInRange` functions provided by the "helperfunctions" package.
+In this demo, we will illustrate the usage of the `isValidNumber`, `isInRange`, and `generateRandomNumbersInRange` functions provided by the "helperfunctionsjs" package.
 
 ## Importing the Package
 ```javascript
@@ -17,7 +17,7 @@ import {
   isValidNumber,
   isInRange,
   generateRandomNumbersInRange,
-} from 'helperfunctions';
+} from 'helperfunctionsjs';
 ```
 
 Here's how you can use it in your project:
