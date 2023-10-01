@@ -55,3 +55,16 @@ const randomNumbers = generateRandomNumbersInRange(range, count);
 console.log(`Generated random numbers within the range [${range[0]}, ${range[1]}]:`);
 console.log(randomNumbers);
 ```
+
+
+### Example 3: findNthMax
+The `findNthMax` function is a JavaScript utility function that allows you to find the nth maximum element in an array of numbers. It uses the QuickSelect algorithm to efficiently find the nth maximum element.
+
+```javascript
+const numbers: number[] = [1,2,3,4,5,6];
+// Find the nth maximum element (optional, defaults to the largest element)
+const nthMax: number | undefined = 3;
+// Call the findNthMax function, which returns a number or a string in case of an error
+const result: number | string = findNthMax(numbers, nthMax);
+console.log(`The ${nthMax}th maximum element is: ${result}`);
+```
